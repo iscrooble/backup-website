@@ -5,18 +5,80 @@ h1 {text-align: center;}
 p {text-align: center;}
 div {text-align: center;}
 img {text-align: center;}
+  
+  
+  #maindiv{
+  border: 2px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#div1 {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+#div2 {
+  display: inline-block;
+  animation: marquee2 10s linear infinite;
+  animation-delay: 5s;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+  
 </style>
+  
+  <script>
+    
+    
+    $('#maindiv').width($('#div1').width());
+    
+    
+  </script>
 </head>
+  
 <body>
 
   <h1>Two years worth of dancing Haruhis made a glopping noise as it flowed endlessly into Asuna.</h1>
-  <marquee behavior="scroll" direction="left">
+  <!--<marquee behavior="scroll" direction="left">-->
+    <div id="maindiv">
+  <div id="div1">
+    &nbsp;<img src="haruhi dance.gif">
 <img src="haruhi dance.gif">
 <img src="haruhi dance.gif">
 <img src="haruhi dance.gif">
+    <img src="haruhi dance.gif">
+    <img src="haruhi dance.gif">
+<!--</marquee>-->
+ </div>
+      
+        <div id="div2">
+    &nbsp;<img src="haruhi dance.gif">
 <img src="haruhi dance.gif">
-</marquee>
-
+<img src="haruhi dance.gif">
+<img src="haruhi dance.gif">
+    <img src="haruhi dance.gif">
+    <img src="haruhi dance.gif">
+<!--</marquee>-->
+ </div>
+      </div>
+      
 <br />
 <img src="haruhi1.gif">
 <img src="haruhi2.gif">
