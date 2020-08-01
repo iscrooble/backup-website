@@ -1,4 +1,3 @@
-<script type="text/javascript">
 // <![CDATA[
 colours=new Array('#ff0000','#00ff00','#ffffff','#ff00ff','#ffa500','#ffff00','#00ff00','#ffffff','ff00ff')
 colours[Math.floor(Math.random()*colours.length)];
@@ -169,4 +168,3 @@ function createDiv(height, width) {
   return (div);
 }
 // ]]>
-</script>
