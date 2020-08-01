@@ -1,5 +1,6 @@
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
 h1 {text-align: center;}
 p {text-align: center;}
@@ -47,12 +48,14 @@ img {text-align: center;}
   <script>
     
     
+    
+    
     $('#maindiv').width($('#div1').width());
     
   
   //change volume of bg audio
   var audio = document.getElementById("myaudio");
-  audio.volume = 0.1;
+  audio.volume = 0.5;
 
     
   </script>
@@ -61,7 +64,7 @@ img {text-align: center;}
   
 <body>
   
-  <audio src="haruhi.mp3" autoplay id="myaudio"></audio>
+  <audio src="haruhi.mp3" autoplay loop id="myaudio"></audio>
 
   <h1>Two years worth of dancing Haruhis made a glopping noise as it flowed endlessly into Asuna.</h1>
   <!--<marquee behavior="scroll" direction="left">-->
