@@ -54,8 +54,6 @@ img {text-align: center;}
     
   
   //change volume of bg audio
-  var audio = document.getElementById("myaudio");
-  audio.volume = 0.5;
 
     
   </script>
@@ -65,6 +63,11 @@ img {text-align: center;}
 <body>
   
   <audio src="haruhi.mp3" autoplay loop id="myaudio"></audio>
+  <script>
+    var audio = document.getElementById("myaudio");
+  audio.volume = 0.3;
+  </script>
+
 
   <h1>Two years worth of dancing Haruhis made a glopping noise as it flowed endlessly into Asuna.</h1>
   <!--<marquee behavior="scroll" direction="left">-->
