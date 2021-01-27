@@ -1,4 +1,4 @@
-var trailimage=["dino3.gif",32,32]
+var trailimage=["rainbowcursor.gif",32,32]
 var offsetfrommouse=[12,12]
 var displayduration=0
 if(document.getElementById||document.all)
