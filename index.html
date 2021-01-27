@@ -30,7 +30,7 @@ img {text-align: center;}
   }
   
   /*custom cursor*/
-  body {cursor: url('864[1].gif') 8 8,auto;}
+/*  body {cursor: url('864[1].gif') 8 8,auto;}*/
   
   /*cursor trail*/
   .trail { /* className for the trail elements */
@@ -46,6 +46,40 @@ img {text-align: center;}
   width: 50%;
   margin: 0 auto;
 }
+  
+  body {
+  cursor: url(frame1.png), auto;
+  -webkit-animation: cursor 83ms infinite;
+  animation: cursor 83ms infinite;
+}
+
+@-webkit-keyframes cursor {
+  0% {cursor: url(frame1.png), auto;}
+  11.1% {cursor: url(frame2.png), auto;}
+  22.2% {cursor: url(frame3.png), auto;}
+  33.3% {cursor: url(frame4.png), auto;}
+  44.4% {cursor: url(frame5.png), auto;}
+  55.5% {cursor: url(frame6.png), auto;}
+  66.6% {cursor: url(frame7.png), auto;}
+  77.7% {cursor: url(frame8.png), auto;}
+  88.8% {cursor: url(frame9.png), auto;}
+  100% {cursor: url(frame10.png), auto;}
+  
+} 
+
+@keyframes cursor {
+  0% {cursor: url(frame1.png), auto;}
+  11.1% {cursor: url(frame2.png), auto;}
+  22.2% {cursor: url(frame3.png), auto;}
+  33.3% {cursor: url(frame4.png), auto;}
+  44.4% {cursor: url(frame5.png), auto;}
+  55.5% {cursor: url(frame6.png), auto;}
+  66.6% {cursor: url(frame7.png), auto;}
+  77.7% {cursor: url(frame8.png), auto;}
+  88.8% {cursor: url(frame9.png), auto;}
+  100% {cursor: url(frame10.png), auto;}
+}
+
   
   
 </style>
