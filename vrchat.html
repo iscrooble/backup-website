@@ -47,6 +47,40 @@ transform: translate(-50%, -50%);
   }
 </style>
 
+   <script>
+      
+      var fileList = [...Array(10)].map((_, i) => `${i}.png`);
+
+      var num = 0;
+
+      
+
+      function getNextImage(imgAr, path) {
+       path = path || 'images/'; // default path here
+         if(num < imgAr.length-1)
+         {
+       num++;
+         }
+       var img = imgAr[ num ];
+       var imgStr = '<img src="' + path + img + '" class="image1" width=921>';
+      document.getElementById('gallery').innerHTML = imgStr;
+
+      }
+      function getPreviousImage(imgAr, path) {
+       path = path || 'images/'; // default path here
+         if(num > 0)
+         {
+       num--;
+         }
+       var img = imgAr[ num ];
+       var imgStr = '<img src="' + path + img + '" class="image1" width=921>';
+      document.getElementById('gallery').innerHTML = imgStr;
+
+      }
+
+      
+   </script>
+   
 </head>
 <body>
 
@@ -61,11 +95,17 @@ transform: translate(-50%, -50%);
    <br>
    <br>
    <div class="parent">
+      <div id="gallery">
       <img class="image1" src="testimage.png" width=921>
+      </div>
 <img class="image2" src="mspaint.png" style="image-rendering:pixelated;" width=1094>
       <div class="image3" style="margin-top: 230px;">
       <img src="sparkles.gif">
       </div>
+      
+      <button onclick="getPreviousImage(fileList, '/vrchat/')">Test Previous</button>
+      <button onclick="getNextImage(fileList, '/vrchat/')">Test Next</button>
+      
    </div>
       
 </body>
