@@ -13,6 +13,24 @@ img {text-align: center;}
   src: url('OpenSans-Regular.ttf');
 }
 
+      .parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%, -50%);
+   z-index: 1;
+   }
+
   
   body{
       font-family: 'OpenSans', Fallback, sans-serif;
@@ -22,8 +40,10 @@ img {text-align: center;}
 </head>
 <body>
 
-<img src="mspaint.png" style="image-rendering:pixelated;" width=1094>
-
+   <div class="parent">
+<img class="image2" src="mspaint.png" style="image-rendering:pixelated;" width=1094>
+   </div>
+      
 </body>
 
 </html>
