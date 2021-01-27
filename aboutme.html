@@ -13,6 +13,24 @@ width: 40%;
 position:relative;
 left: 45%;
 }
+   
+   .parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+   
    @font-face {
   font-family: 'MyWebFont';
   src: url('OpenSans-Regular.ttf');
@@ -59,8 +77,11 @@ Although I'm actually someone who grew up in the 2000s, I find the concept and a
    </p>
 
    <p>
-      <img src="wolf.gif" title="On all levels except physical, I am a WOLF! AWOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!" usemap="#mentalillness">
-      
+      <div class="parent">
+      <img class="image1" src="wolf.gif" title="On all levels except physical, I am a WOLF! AWOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!" usemap="#mentalillness">
+      <img class="image2" src="fallingroses.gif">
+   </div>
+         
       <map name="mentalillness">
   <area shape="circle" coords="98,63,5" href="nothing.html" alt="Holy crap Lois, it's Sans Undertale!">
 </map>
