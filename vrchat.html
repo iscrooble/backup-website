@@ -58,7 +58,7 @@ transform: translate(-50%, -90%);
       
       var fileList = [...Array(16)].map((_, i) => `${i}.png`);
 
-      var num = 0;
+      var num = 1;
       
       //console.log(fileList);
 
@@ -77,7 +77,7 @@ transform: translate(-50%, -90%);
       }
       function getPreviousImage(imgAr, path) {
        path = path || 'images/'; // default path here
-         if(num > 0)
+         if(num > 1)
          {
        num--;
          }
