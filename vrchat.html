@@ -70,9 +70,9 @@ z-index: -1;
 
    <script>
       
-      var fileList = [...Array(16)].map((_, i) => `${i}.png`);
+      var fileList = [...Array(16)].map((_, i) => `${i+1}.png`);
 
-      var num = 1;
+      var num = 0;
       
       //console.log(fileList);
 
@@ -80,7 +80,7 @@ z-index: -1;
 
       function getNextImage(imgAr, path) {
        path = path || 'images/'; // default path here
-         if(num < imgAr.length)
+         if(num < imgAr.length-1)
          {
        num++;
          }
@@ -91,7 +91,7 @@ z-index: -1;
       }
       function getPreviousImage(imgAr, path) {
        path = path || 'images/'; // default path here
-         if(num > 1)
+         if(num > 0)
          {
        num--;
          }
