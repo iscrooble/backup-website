@@ -40,6 +40,13 @@ transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
    z-index: 2;
    }
+.navigation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%, -90%);
+   z-index: 4;
+   }
 
   
   body{
@@ -104,13 +111,12 @@ transform: translate(-50%, -50%);
       <div class="image3" style="margin-top: 230px;">
       <img src="sparkles.gif">
       </div>
-      
-      <div style="z-index: 4;">
+            
+   </div>
+      <div class="navigation">
       <button onclick="getPreviousImage(fileList, '/vrchat/')">Test Previous</button>
       <button onclick="getNextImage(fileList, '/vrchat/')">Test Next</button>
       </div>
-      
-   </div>
       
 </body>
 
