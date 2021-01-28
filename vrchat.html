@@ -44,11 +44,18 @@ transform: translate(-25%, -50%);
 transform: translate(0%, -50%);
    z-index: 2;
    }
-.navigation {
+.navigation-left {
   position: absolute;
   top: 50%;
-  left: 50%;
-transform: translate(-50%, -90%);
+  left: 10%;
+transform: translate(0%, -90%);
+   z-index: 4;
+   }
+.navigation-right {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+transform: translate(0%, -90%);
    z-index: 4;
    }
    
@@ -127,9 +134,9 @@ z-index: -1;
       </div>
             
    </div>
-      <div class="navigation">
-      <input type="image" src="arrow.png" onclick="getPreviousImage(fileList, '/vrchat/')" style="width: 42px; image-rendering: pixelated; float: left;"></input>
-      <input type="image" src="arrowright.png" onclick="getNextImage(fileList, '/vrchat/')" style="width: 42px; image-rendering: pixelated; float: right;"></input>
+      <div >
+      <input type="image" src="arrow.png" class="navigation-left" onclick="getPreviousImage(fileList, '/vrchat/')" style="width: 42px; image-rendering: pixelated; float: left;"></input>
+      <input type="image" src="arrowright.png" class="navigation-right" onclick="getNextImage(fileList, '/vrchat/')" style="width: 42px; image-rendering: pixelated; float: right;"></input>
       </div>
       
 </body>
