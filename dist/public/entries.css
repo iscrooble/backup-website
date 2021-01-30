@@ -1,0 +1,22 @@
+.gallery {
+    display:inline;
+    padding:0px;
+}
+.card {
+    list-style: none;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 7px outset lightgray;
+    padding: 10px;
+    background-color: #FFEEBB;
+}
+
+.drawing {
+}
+
+.inset {
+    border: 1px inset lightgray;
+    margin: 1px;
+}

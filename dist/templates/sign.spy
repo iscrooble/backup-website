@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sign the guestbook!</title>
+    <meta charset="utf-8" />
+    <meta  name="viewport"  content="width=device-width, initial scale=1.0">
+    <script type="text/javascript" src="jscolor.min.js"></script>
+    <script type="text/javascript" src="ritare.js"></script>
+    <link type="text/css" href="ritare.css" rel="stylesheet" />
+    <link type="text/css" href="entries.css" rel="stylesheet" />
+    <style>
+      body {
+        text-align: center;
+      }
+
+      #painter {
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+      }
+
+      .nav {
+      padding:0px;
+      margin:0px;
+      }
+
+      .nav-item {
+      list-style:none;
+      display: inline;
+      border: 2px outset black;
+      padding: 10px;
+      margin: 2px;
+      }
+
+      .view-entries{}
+
+      .view-entries:before {
+      content: "📖 ";
+      }
+      .view-entries:after {
+      content: " 📖";
+      }
+    </style>
+  </head>
+  <body>
+
+    <section>
+      <h1>Sign the guestbook!</h1>
+      <noscript><p>The guestbook canvas depends on Javascript!</p></noscript>
+      <nav>
+        <ul class="nav">
+          <a href="https://wysteriary.art/"><li class="nav-item">Home</li></a>
+          <a href="https://guestbook.wysteriary.art/"><li class="nav-item">Guestbook</li></a>
+        </ul>
+      </nav>
+      <div id="painter">
+        <script type="text/javascript" src="ritare-init.js"></script>
+      </div>
+    </section>
+
+    <section>
+      <h1>Recent guestbook entries</h1>
+      <p class="view-entries"><a href="/entries">view all entries</a></p>
+      <p>Listing 4 out of {{ total }} entries from the guestbook</p>
+      <ol class="gallery">
+        {{ recent }}
+      </ol>
+    </section>
+
+  </body>
+</html>

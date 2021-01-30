@@ -1,0 +1,37 @@
+<!DOCTYPE  html>
+<html  lang="en">
+<head>
+    <meta  charset="UTF-8">
+    <meta  name="viewport"  content="width=device-width, initial scale=1.0">
+    <link type="text/css" href="entries.css" rel="stylesheet" />
+    <title>Guestbook Entries</title>
+    <style>
+      body {
+      text-align: center;
+      }
+
+      #painter {
+      display: flex;
+      justify-content: center;
+      margin: 1em;
+      }
+
+      .sign-guestbook:before {
+          content: "✍️ ";
+      }
+
+      .sign-guestbook:after {
+          content: " ✍️";
+      }
+    </style>
+</head>
+<body>
+    <h1>Guestbook Entries</h1>
+    {{ latest }}
+    <p>Listing all {{ total }} entries in the guestbook</p>
+    <p class="sign-guestbook"><a href="/">Sign the guestbook</a></p>
+    <ol class="gallery">
+    {{ images }}
+    </ol>
+</body>
+</html>
