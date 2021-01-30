@@ -36,9 +36,35 @@ img {text-align: center;}
   src: url('OpenSans-Regular.ttf');
 }
 
-table { margin-left: auto; margin-right: auto; text-align: center; border: 7px outset lightgray; padding: 1px; background-color: #FFEEBB;}
+.wr-inline {display: inline;}
+      .wr-block {display: block;}
+      .wr-flex {display: flex;}
+      .wr-hidden {display: none;}
 
-td { border: 1px inset lightgray; margin: 1px; }
+      .wr-inset {
+          border: 1px inset lightgray;
+          margin: 1px;
+      }
+
+      .wr-no-spacing {
+          padding: 0px;
+          margin: 0px
+      }
+
+      li.wr {list-style: none;}
+      a.wr:before {content: "[ ";}
+      a.wr:after {content: " ]";}
+      a.wr {text-decoration: none;}
+
+      .wr-container {
+          display: inline flow-root;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          border: 7px outset lightgray;
+          padding: 1px;
+          background-color: #FFEEBB;
+      }
 
 
   
@@ -216,31 +242,33 @@ td { border: 1px inset lightgray; margin: 1px; }
   
   <p>
 
-<table>
+  <section class="wr-container">
+    <hr class="wr-hidden">
+    
+    <h3 class="wr-inset wr-no-spacing">🕸 AGM Webring 🕸</h3>
 
-<tr style="font-size: 12px;">
-<td>
-<img src="https://u.smutty.horse/lzidufdonfd.png" width="138" align="left">
-The AGM Webring is owned by David.
+    <div class="wr-flex wr-inset">
+      <img class="wr-inset" src="https://u.smutty.horse/lzidufdonfd.png" width="128" alt="AGM webring mascot chihuahua">
+      <div class="wr-inset">
+        <p >
+          The AGM Webring is owned by AGM.<br><br>
+          <small>Want to join the AGM Webring? Click <a href="mailto:iscrooble@gmail.com">here</a> to ask!</small>
+        </p>
+      </div>
+    </div>
 
-<br><br>
+    <nav class="wr-inset">
+      <ul class="wr-inline wr-no-spacing">
+        <li class="wr wr-inline"><a class="wr">Prev</a></li>
+        <li class="wr wr-inline"><a class="wr">Random</a></li>
+        <li class="wr wr-inline"><a class="wr">Next</a></li>
+        <li class="wr wr-block"><a class="wr">List Sites</a></li>
+      </ul>
+    </nav>
 
-Want to join the AGM Webring? Click <a href="mailto:iscrooble@gmail.com">here</a> to ask!
-  
-  <br><br>
-  
-  Note: Links aren't working for now until a couple others finish making their sites.
-</td>
-</tr>
-<tr>
-<td>
-[ Prev ] [ Random ] [ Next ]
-<br>
-[ List Sites ]
-</td>
+    <hr class="wr-hidden">
+  </section>
 
-</tr>
-</table>
   
   
   </p>
