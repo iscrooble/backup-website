@@ -16,6 +16,22 @@ img {text-align: center;}
     margin-right: auto;
     display: table;
   }
+  
+  
+  
+  .oldschool {
+    color: black;
+    border: 2px outset white;
+    background: #eee;
+    padding: 2px;
+    text-decoration: none;
+}
+.oldschool:hover {
+    background: #f5f5f5;
+}
+.oldschool:active {
+    border-style: inset;
+}
 </style>
 
 </head>
@@ -24,7 +40,25 @@ img {text-align: center;}
 <h1>Copy+paste the text below into your website to add my button!</h1>
 <br />
   
-<div class="code">
+  <div>
+    <a href="#" class="oldschool" onclick="copyDivToClipboard()">Copy to Clipboard</a>
+  </div>
+
+  
+              <script>
+                function copyDivToClipboard() {
+                    var range = document.createRange();
+                    range.selectNode(document.getElementById("a"));
+                    window.getSelection().removeAllRanges(); // clear current selection
+                    window.getSelection().addRange(range); // to select text
+                    document.execCommand("copy");
+                    window.getSelection().removeAllRanges();// to deselect
+                }
+            </script>
+
+  
+  
+<div class="code" id="a">
 
 <code style="font-size: 16px">
 &lt;a href="https://david🐺.ws" title="Visit David's website!"&gt;
