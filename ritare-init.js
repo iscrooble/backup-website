@@ -14,6 +14,7 @@ Ritare.start({
                 })
                 .catch(error => {
                     console.error('There has been a problem with your fetch operation:', error);
+                    location.href = "/guestbook_entries.html"
                 });
         }, "image/png")
         
