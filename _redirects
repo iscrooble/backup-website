@@ -1,1 +1,5 @@
-/guestbook https://guestbook.wysteriary.art / 200
+/submission             https://david-guestbook.ayampenyet.rodeo/submission
+/static/guestbook/*     https://david-guestbook.ayampenyet.rodeo/static/guestbook/:splat 200
+/guestbook.html         https://david-guestbook.ayampenyet.rodeo/ 200
+/guestbook_entries.html https://david-guestbook.ayampenyet.rodeo/entries 200
+/sex / 200
