@@ -13,7 +13,8 @@
 <meta property="twitter:title" content="Welcome to David's Website!">
 <meta property="twitter:description" content="Where you can find all things David.">
 <meta name="twitter:image" content="/vrchat/11.png" />
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  
 <style>
 body{background-image: url('pattern.png');}
 h1 {text-align: center;}
@@ -134,9 +135,24 @@ img {text-align: center;}
 
 <!--  <script type="text/javascript" src="curtrail.js"></script>-->
   
+  <script>
+  var beepOne = $("#beep-one")[0];
+$("#webring")
+	.mouseenter(function() {
+		beepOne.play();
+	});
+  </script>
+  
 </head>
 <body>
 
+  
+  <audio preload="auto" id="beep-one">
+	<source src="agm.mp3"></source>
+	Your browser isn't invited for super fun audio time.
+  </audio>
+
+  
 <!--<h1>Welcome to David's Website!</h1>-->
   <div class="dashed">
   <h1><span style="color:#9400D3">W</span><span style="color:#4B0082">e</span><span style="color:#0000FF">l</span><span style="color:#00BB00">c</span><span style="color:#FFFF88">o</span><span style="color:#FF7F00">m</span><span style="color:#FF0000">e</span>&nbsp;<span style="color:#FF7F00">t</span><span style="color:#FFFF88">o</span>&nbsp;<span style="color:#00BB00">D</span><span style="color:#0000FF">a</span><span style="color:#4B0082">v</span><span style="color:#9400D3">i</span><span style="color:#4B0082">d</span><span style="color:#0000FF">'</span><span style="color:#00BB00">s</span>&nbsp;<span style="color:#FFFF88">W</span><span style="color:#FF7F00">e</span><span style="color:#FF0000">b</span><span style="color:#FF7F00">s</span><span style="color:#FFFF88">i</span><span style="color:#00BB00">t</span><span style="color:#0000FF">e</span><span style="color:#4B0082">!</span>
@@ -253,7 +269,7 @@ img {text-align: center;}
   
   <p>
 
-  <section class="wr-container" title="Note: links aren't working until a few others finish their sites">
+  <section class="wr-container" id="webring" title="Note: links aren't working until a few others finish their sites">
     <hr class="wr-hidden">
     
     <h3 class="wr-inset wr-no-spacing">🕸 AGM Webring 🕸</h3>
