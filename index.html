@@ -162,7 +162,7 @@ function createsoundbite(sound){
 		}
 		html5audio.load()
 		html5audio.playclip=function(){
-			if(html5audio.currentTime>=html5audio.duration)
+			if(html5audio.ended)
 			{
 				html5audio.pause()
 				html5audio.currentTime=0
