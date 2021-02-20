@@ -162,6 +162,8 @@ function createsoundbite(sound){
 		}
 		html5audio.load()
 		html5audio.playclip=function(){
+			console.log("ended: " + html5audio.ended);
+			console.log("paused: " + html5audio.paused);
 			if(html5audio.ended)
 			{
 				html5audio.pause()
