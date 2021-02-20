@@ -162,9 +162,12 @@ function createsoundbite(sound){
 		}
 		html5audio.load()
 		html5audio.playclip=function(){
-			html5audio.pause()
-			html5audio.currentTime=0
-			html5audio.play()
+			if(html5audio.currentTime>=html5audio.duration)
+			{
+				html5audio.pause()
+				html5audio.currentTime=0
+				html5audio.play()
+			}
 		}
 		return html5audio
 	}
