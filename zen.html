@@ -37,15 +37,25 @@ background: linear-gradient(180deg, var(--color1) 21%, var(--color2) 50%, var(--
 animation-name: mood;
 animation-duration: 25s;
 animation-iteration-count: infinite;
-animation-timing-function: ease;
+animation-timing-function: ease-in-out;
 animation-direction: normal;
 }
 
 .furry
 {
-transform: translateX(400px);
-animation: plswork 2s linear infinite;
+mix-blend-mode: multiply;
+width: 350px;
 position: absolute;
+left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+animation-name: plswork;
+animation-duration: 6s;
+animation-iteration-count: infinite;
+animation-timing-function: ease;
+animation-direction: normal;
 }
 
 
@@ -70,12 +80,13 @@ div {text-align: center;}
 --color2: rgba(148,104,153,255);
 --color3: rgba(167,105,140,255);
 --color4: rgba(79,65,98,255)
+}
 
 75% {--color1: rgba(90,105,136,255);
 --color2: rgba(79,125,149,255);
 --color3: rgba(104,156,152,255);
 --color4: rgba(178,160,150,255)
-
+}
 
 
 100% {--color1: rgba(157,193,227,1);
@@ -88,11 +99,15 @@ div {text-align: center;}
 @keyframes plswork
 {
 
+
 50%{
-transform: translateX(0px);
+margin-top: 50px;
 }
 
+
 }
+
+
 
 </style>
 
@@ -101,12 +116,12 @@ transform: translateX(0px);
 </head>
 <body>
 
-<img class="furry" src="https://i.imgur.com/yqrQfSM.png" width="350px" style="mix-blend-mode: multiply;">
-
+<img class="furry" src="https://i.imgur.com/yqrQfSM.png">
 <p style="position: absolute; bottom: 6%; left: 0; right: 0; margin-left: auto; margin-right: auto; width: 50vw; min-width: 700;
 
 mix-blend-mode: overlay;
 ">
+
 <br>
 Take a breath and say to yourself:
 <br>
